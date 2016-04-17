@@ -4,9 +4,7 @@
 // The line items are in the `activities` array. That's an array of objects. Each object
 // should have a `name` string, a `spending` number, optionally an `agency_code` string
 // (which is specified in many of the fields for the source data), and its own
-// `activites` array for subdepartments. This nesting goes exactly one level deep. If
-// `spending` is unspecified, it will be automatically calculated as the sum of the spending
-// on subactivities.
+// `activites` array for subdepartments. This nesting goes exactly one level deep.
 
 export default {
   year: 2015,
@@ -35,7 +33,7 @@ export default {
     {
       name: 'Debt service',
       activities: [
-        {name: 'Net interest payments on national debt', spending: 223.2},
+        {name: 'Net interest payments on outstanding debt', spending: 223.2},
       ],
     },
     {
