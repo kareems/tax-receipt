@@ -5,7 +5,7 @@ import './LineItemGroup.scss';
 class LineItemGroup extends Component {
 
   static propTypes = {
-    groupSpendingData: PropTypes.array,
+    groupSpendingData: PropTypes.object,
     totalSpending: PropTypes.number,
   };
 
@@ -23,8 +23,8 @@ class LineItemGroup extends Component {
     }
 
     return (
-      <div>
-        <h3 children={this.props.groupSpendingData.name} />
+      <div className='c-line-item-group'>
+        <h3 className='c-line-item-group__heading' children={this.props.groupSpendingData.name} />
         <div>
           {
             _.map(this.props.groupSpendingData.activities, (lineItem, i) => {
@@ -42,9 +42,9 @@ class LineItemGroup extends Component {
               }
 
               return (
-                <div key={`line-item-${i}`}>
-                  <div children={lineItem.name} />
-                  <div children={displayedAmount} />
+                <div key={`line-item-${i}`} className='c-line-item-group__item'>
+                  <div children={displayedAmount} className='c-line-item-group__item-amount' />
+                  <div children={lineItem.name} className='c-line-item-group__item-name' />
                 </div>
               );
             })

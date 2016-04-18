@@ -1,0 +1,32 @@
+@import '../variables.scss';
+
+.c-alternative-products {
+  margin-top: 48px;
+
+  &__heading {
+    margin: 0;
+    font-size: 28px;
+  }
+
+  &__product {
+    @include m-clearfix;
+    margin-top: 18px;
+    font-family: $font-family-data;
+  }
+
+  &__product-name {
+    display: block;
+    max-width: 80%;
+  }
+
+  &__product-price {
+    float: right;
+    margin-left: 12px;
+    text-align: right;
+  }
+
+  &__placeholder {
+    margin-top: 18px;
+    font-family: $font-family-data;
+  }
+}

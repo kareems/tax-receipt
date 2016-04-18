@@ -12,8 +12,16 @@ html, body {
   background-color: $body-bg;
   color: $text-color;
   font-family: $font-family-base;
+  font-size: 18px;
+}
+
+a {
+  color: $link-color;
+  text-decoration: underline;
 }
 
 .Layout {
   margin: 0 auto;
+  padding: 24px;
+  max-width: 640px;
 }

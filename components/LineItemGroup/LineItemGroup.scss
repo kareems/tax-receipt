@@ -1,3 +1,27 @@
-.c-line-item-group {
+@import '../variables.scss';
 
+.c-line-item-group {
+  margin-top: 36px;
+
+  &__heading {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  &__item {
+    @include m-clearfix;
+    margin-top: 18px;
+    font-family: $font-family-data;
+  }
+
+  &__item-name {
+    max-width: 80%;
+  }
+
+  &__item-amount {
+    float: right;
+    margin-left: 6px;
+    text-align: right;
+  }
 }
