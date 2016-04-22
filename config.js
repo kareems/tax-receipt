@@ -1,5 +1,5 @@
 export default {
   title: 'Tax Receipt',
-  description: 'An itemized breakdown of what you paid for with your tax bill.',
+  description: 'See what the feds spent your 2015 tax bill on. Then see a random list of things you could have bought from Amazon with that money.',
   googleAnalyticsId: 'UA-18356826-1',
 };
